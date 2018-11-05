@@ -1,4 +1,4 @@
-/*exo_printf.c
+/*testsizeof.c
 
 Exercice 2_1
 
