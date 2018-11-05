@@ -1,3 +1,16 @@
+/*somme.c
+
+Exercice 2_2
+
+Un programme calculant la somme, le produit et la moyenne de trois entiers entrés
+par l'utilisateur à l'aide de la fonction scanf.
+
+Auteur : Florian Chemin
+Date : 16 octobre 2018
+Cours : NFA037
+Établissement: CNAM Bretagne
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
