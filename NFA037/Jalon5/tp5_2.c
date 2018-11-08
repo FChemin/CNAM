@@ -14,23 +14,23 @@ Cours : NFA037
 #include <stdio.h>
 #include <stdlib.h>
 
-struct point
+struct point // Déclaration d'une structure point
 {
     char nom;
     int x, y;
 };
 
-struct point calculerOppose(struct point p);
+struct point calculerOppose(struct point p); // Prototype de la fonction calculerOppose
 
 int main(int argc, char *argv[])
 {
-    struct point pointA, pointB;
+    struct point pointA, pointB; // Initialisation des variables de type point
 
-    pointA.nom = 'A';
-    pointA.x = 10;
-    pointA.y = 12;
+    pointA.nom = 'A'; // Affection du nom A à la variable pointA
+    pointA.x = 10; // Affection de l'entier 10 au x du pointA
+    pointA.y = 12; // Affection de l'entier 12 au y du pointA
 
-    pointB = calculerOppose(pointA);
+    pointB = calculerOppose(pointA); // Appel de la fonction calculerOppose
 
     printf("Soit le point %c (%d;%d).\n", pointA.nom, pointA.x, pointA.y);
     printf("Son opposé est le point %c (%d;%d)\n\n", pointB.nom, pointB.x, pointB.y);
@@ -40,11 +40,11 @@ int main(int argc, char *argv[])
 
 struct point calculerOppose(struct point p)
 {
-    struct point q;
+    struct point q; // Initialisation de la variable à retourner
 
     q.nom = p.nom;
-    q.x = 0 - p.x;
-    q.y = 0 - p.y;
+    q.x = 0 - p.x; // Calcul du x opposé
+    q.y = 0 - p.y; // Calcul du y opposé
 
     return q;
 }
