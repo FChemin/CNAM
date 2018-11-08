@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     pointB = calculerOppose(pointA);
 
     printf("Soit le point %c (%d;%d).\n", pointA.nom, pointA.x, pointA.y);
-    printf("Son opposé est le point %c (%d;%d)\n\n", pointA.nom, pointB.x, pointB.y);
+    printf("Son opposé est le point %c (%d;%d)\n\n", pointB.nom, pointB.x, pointB.y);
 
     return 0;
 }
@@ -41,8 +41,8 @@ int main(int argc, char *argv[])
 struct point calculerOppose(struct point p)
 {
     struct point q;
-    int x, y;
 
+    q.nom = p.nom;
     q.x = 0 - p.x;
     q.y = 0 - p.y;
 
