@@ -137,6 +137,11 @@ char* decoder(char* texteADecoder)
         exit(0);
     }
 
+    if (texteDecode == NULL)
+    {
+        exit(0);
+    }
+
     for (i = 0; i < strlen(texteADecoder); i++)
 	{
         if(isupper(texteADecoder[i]))
